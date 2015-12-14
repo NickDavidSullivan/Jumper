@@ -30,7 +30,7 @@ public class Vehicle{
 		this.pos_x = v.pos_x;
 		this.pos_y = v.pos_y;
 		this.wants_to_jump = v.wants_to_jump;
-		this.dead = dead;
+		this.dead = v.dead;
 		this.neural_network = new NeuralNet();
 		this.genome = new Genome(v.getGenome());
 		this.neural_network.setWeights(genome.getWeights());
